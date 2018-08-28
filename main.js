@@ -150,7 +150,7 @@ if (PositionX == monsterPositionX && PositionY == (monsterPositionY)+10)
 var i;
         var x = document.getElementsByClassName("snake-tail");
         for (i = 0; i < x.length; i++) {
-            x[i].style.setProperty("top", yPositionArr[yPositionArr.length -1 -i ] - 3 - (i*10) - i -20 +"px" );
+            x[i].style.setProperty("top", yPositionArr[yPositionArr.length -1 -i ] -2- (i*10)  -20 +"px" );
             x[i].style.setProperty("left", xPositionArr[xPositionArr.length -1 -i ] +"px" );
         }
 /*
@@ -192,3 +192,6 @@ pCounter.innerHTML = points;
 }
 
 setInterval(snakeGame,gameTimer);
+
+
+
