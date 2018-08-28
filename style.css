@@ -37,6 +37,7 @@ body {
     height: 500px;
     background-color: #333333;
     margin:auto;
+    position: relative;
     
 }
 
@@ -72,7 +73,7 @@ a {
     background-color: green;
     
     border-radius: 3px;
-    position: relative;
+    position: absolute;
     z-index: 100;
     
 }
@@ -82,7 +83,7 @@ a {
     background-color: blue;
    
     border-radius: 3px;
-    position: relative; 
+    position: absolute; 
 }
 
 .monster{
@@ -91,12 +92,13 @@ a {
     background-color: blue;
     border: 1px solid black;
     border-radius: 7px;
-    position: relative;
+    position: absolute;
+    
 }
 
 .bad-monster{
     background-color:red;
-    box-shadow: 0px 0px 15px red;
+    box-shadow: 0px 0px 10px orangered;
 }
 
 

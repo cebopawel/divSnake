@@ -58,7 +58,7 @@ document.addEventListener('keydown', function(event) {
    monster.style.setProperty("top", monsterPositionY +"px" );
    monster.style.setProperty("left", monsterPositionX +"px" );
 
-  /* var monster2 = document.createElement("div");
+   var monster2 = document.createElement("div");
     monster2.classList.add("monster");
     var monster3 = document.createElement("div");
     monster3.classList.add("monster");
@@ -78,7 +78,7 @@ document.addEventListener('keydown', function(event) {
    var monsterPositionX4=Math.floor(Math.random()*49)*10;
    var monsterPositionY4=Math.floor(Math.random()*49)*10;
    monster4.style.setProperty("top", monsterPositionY4 +"px" );
-   monster4.style.setProperty("left", monsterPositionX4 +"px" ); */
+   monster4.style.setProperty("left", monsterPositionX4 +"px" ); 
 
   
     snakeHead.classList.add("snake-body");
@@ -99,7 +99,7 @@ document.addEventListener('keydown', function(event) {
    st.classList.add("snake-tail");
      }
 
-     /*
+     
      function pointsUp2() {
         monsterPositionX2 = Math.floor(Math.random()*49)*10;
         monsterPositionY2 = Math.floor(Math.random()*49)*10;
@@ -113,7 +113,7 @@ document.addEventListener('keydown', function(event) {
         monster3.style.setProperty("top", monsterPositionY3 +"px" );
         monster3.style.setProperty("left", monsterPositionX3 +"px" );
     points = points+1;
-    } */
+    } 
     
 
  function snakeGame(){
@@ -142,18 +142,13 @@ if (PositionY == -10 || PositionY == pgWidth)
 
 
 
-if (PositionX == monsterPositionX && PositionY == (monsterPositionY)+10) 
+if (PositionX == monsterPositionX && PositionY == (monsterPositionY)) 
 {
    pointsUp();
    
 }
-var i;
-        var x = document.getElementsByClassName("snake-tail");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.setProperty("top", yPositionArr[yPositionArr.length -1 -i ] -2- (i*10)  -20 +"px" );
-            x[i].style.setProperty("left", xPositionArr[xPositionArr.length -1 -i ] +"px" );
-        }
-/*
+    
+
 if (points == 10 )
 {
     pg.appendChild(monster2);
@@ -162,26 +157,31 @@ if (points == 20 )
 {
     pg.appendChild(monster3);
 }
-if (points == 30 )
+if (points == 10 )
 {
     pg.appendChild(monster4);
 }
 
-if (points > 9 && (PositionX == monsterPositionX2 && PositionY == (monsterPositionY2)+20))
+if (points > 9 && (PositionX == monsterPositionX2 && PositionY == (monsterPositionY2)))
 {
     pointsUp2();
 }
 
-if (points > 19 && (PositionX == monsterPositionX3 && PositionY == (monsterPositionY3)+30))
+if (points > 19 && (PositionX == monsterPositionX3 && PositionY == (monsterPositionY3)))
 {
     pointsUp3();
 }
 
-if (points > 29 && (PositionX == monsterPositionX4 && PositionY == (monsterPositionY4)+40))
+if (points > 9 && (PositionX == monsterPositionX4 && PositionY == (monsterPositionY4)))
 {
     gameOver();
-}  */
-
+}  
+var i;
+var x = document.getElementsByClassName("snake-tail");
+for (i = 0; i < x.length; i++) {
+    x[i].style.setProperty("top", yPositionArr[yPositionArr.length -1 -i ]  +"px" );
+    x[i].style.setProperty("left", xPositionArr[xPositionArr.length -1 -i ] +"px" );
+}
 
         xPositionArr.push(PositionX); 
         yPositionArr.push(PositionY);
