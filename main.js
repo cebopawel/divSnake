@@ -15,6 +15,8 @@ function getRandomNo (){
     return rand;
 }
 function gameOver (){
+    PositionX = 100;
+    PositionY = 100;
     location.reload();
 }
 
