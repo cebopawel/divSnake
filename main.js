@@ -42,8 +42,6 @@ document.addEventListener('keydown', function(event) {
     }
   });
 
-  
-
   var pgXposition = document.getElementById('element').offsetLeft;
   var pgYposition = document.getElementById('element').offsetTop;
   var pgHeight = document.getElementById('element').offsetHeight;
